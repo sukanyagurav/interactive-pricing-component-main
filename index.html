@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  </style>
+</head> 
+<body>
+  <header>
+    <h1>
+      Simple, traffic-based pricing
+    </h1>
+    <h2>
+      Sign-up for our 30-day trial. No credit card required. 
+    </h2>
+  </header>
+  <main class="col-flex">
+    <section class="price-section">
+    <section class="price-label row-flex">
+      <p class="pageView"><span class="view-count">10K</span> Pageviews</p>
+      <p class="perMonth row-flex"><span class="price">$8.00</span> <span class="duration"> / month</span></p>
+    </section>
+    <section class="scroll">
+      <div class="range-slider">
+        <input type="range" class="range" id="range" min="0" max="80" value="0" step="20">
+      </div>
+      <section class="package-type row-flex">
+        <label class="month" for="select" >Monthly Billing</label>
+        <input type="checkbox" id="select" class="toggle" checked aria-label="Please select a plan">
+        <label for="select" class="label" aria-hidden="true">
+          <div class="ball"></div>
+        </label>
+        <label class="annual" for="select" >Yearly Billing</label>
+         <span class="discount desktopView">25% discount</span>
+         <span class="discount mobileView ">-25%</span>
+      </section>
+    </section>
+  </section>
+    <section class="package-benefits row-flex">
+      <ul>
+        <li>Unlimited websites</li>
+        <li>100% data ownership</li>
+        <li>Email reports</li>
+      </ul>
+      <button class="btn">
+        Start my trial
+      </button>
+    </section>
+  </main>
+
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SG</a>.
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
