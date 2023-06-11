@@ -47,7 +47,7 @@ header::after{
     content:'';
     background:hsl(224, 65%, 95%);
     position:absolute;
-    border-bottom-left-radius:100px;
+    border-bottom-left-radius:120px;
     top:0;
     left:0;
     z-index:-1;
@@ -93,7 +93,7 @@ main{
     padding:3rem 1.7rem 2.3rem;
 }
 .price-section.col-flex{
-    gap:1.25rem;
+    gap:1rem;
 }
 .price-label.row-flex{
     flex-direction:column;
@@ -132,7 +132,7 @@ input[type="range"]{
     -webkit-appearance:none;
     outline:none;
     border-radius:15px;
-    height:16px;
+    height:7px;
     cursor:pointer;
     background-color:var(--light-gray-blue);
 }
@@ -159,7 +159,7 @@ input[type='range']::-webkit-slider-thumb:hover{
 input[type="range"]::-moz-range-track{
     background-color:var(--light-gray-blue);
     border-radius:100px;
-    height:17px;
+    height:7px;
     cursor:pointer;
 }
 input[type='range']::-moz-range-thumb{
@@ -175,7 +175,7 @@ input[type='range']::-moz-range-thumb{
     flex-wrap:wrap;
     justify-content:center;
     align-self:center;
-    gap:0.5em;
+    gap:0;
 }
 .toggle {
     visibility: hidden;
@@ -216,13 +216,13 @@ input[type='range']::-moz-range-thumb{
     }
    
     100% {
-      transform: translateX(22px) ;
+      transform: translateX(23px) ;
     }
   }
   
   @keyframes slideOff {
     0% {
-      transform: translateX(22px) ;
+      transform: translateX(23px) ;
     }
     100% {
       transform: translateX(0) ;
@@ -296,20 +296,15 @@ ul li::marker{
     .package-benefits.row-flex{
         flex-direction:row;
     }
-    .package-type.row-flex{
-        gap:1rem;
-    }
     .package-type span{
         font-size:0.9rem;
     }
-    .month{
-        margin-right:0;
-    }
+  
     .ball{
         top: 3.8px;
         left: 4px;
     }
     .annual{
-        margin-left:0;
+        margin-left:0.45rem;
     }
 }
